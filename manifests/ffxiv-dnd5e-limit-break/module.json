@@ -1,0 +1,62 @@
+{
+  "id": "ffxiv-dnd5e-limit-break",
+  "title": "FFXIV x D&D 5e: Party Limit Break Gauge",
+  "description": "Standalone FFXIV Party Limit Break Gauge (LB1 / LB2 / LB3 + Beyond Limits) for Foundry VTT v14 & dnd5e v6.1.1. Auto-detects FFXIV & D&D roles, charges automatically in combat, and includes a synced ApplicationV2 HUD and public API for encounters and Ultimates.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.370"
+  },
+  "authors": [
+    {
+      "name": "Sovahless"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    {
+      "src": "styles/limit-break.css",
+      "layer": "modules"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    }
+  ],
+  "socket": true,
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "6.0.0",
+          "verified": "6.1.1"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "ffxiv-dnd5e-dawntrail",
+        "type": "module",
+        "compatibility": {
+          "minimum": "1.1.0",
+          "verified": "1.1.2"
+        }
+      }
+    ]
+  },
+  "url": "https://github.com/Sovahless/ffxiv-foundry-modules",
+  "manifest": "https://raw.githubusercontent.com/Sovahless/ffxiv-foundry-modules/main/manifests/ffxiv-dnd5e-limit-break/module.json",
+  "download": "https://github.com/Sovahless/ffxiv-foundry-modules/releases/download/ffxiv-dnd5e-limit-break-v1.0.0/ffxiv-dnd5e-limit-break.zip"
+}

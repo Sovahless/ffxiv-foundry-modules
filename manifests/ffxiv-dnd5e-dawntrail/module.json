@@ -1,0 +1,282 @@
+{
+  "id": "ffxiv-dnd5e-dawntrail",
+  "title": "FFXIV x D&D 5e: Asgard's Guide to Eitherys (Dawntrail Edition)",
+  "description": "Complete Foundry VTT v14 / dnd5e v6.1.1 conversion of SilentSoren's FFXIV x D&D 5e Player Compendium (Dawntrail Edition): 9 Races & Clans, 22 Playable Classes & Subclasses, 96 Final Fantasy Spells, Role Action Feats, Machinist & Signature Equipment, Companion Actors, and Reference Journals with FFXIV icons.",
+  "version": "1.1.2",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.370"
+  },
+  "authors": [
+    {
+      "name": "SilentSoren (Original Compendium) & Sovahless (Foundry V14 Conversion)"
+    }
+  ],
+  "esmodules": [
+    "scripts/ffxiv-dawntrail.mjs"
+  ],
+  "styles": [
+    {
+      "src": "styles/ffxiv-dawntrail.css",
+      "layer": "modules"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "6.0.0",
+          "verified": "6.1.1"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "dae",
+        "type": "module",
+        "compatibility": {
+          "minimum": "14.0.0",
+          "verified": "14.0.22"
+        }
+      },
+      {
+        "id": "midi-qol",
+        "type": "module",
+        "compatibility": {
+          "minimum": "14.0.0",
+          "verified": "14.0.20"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "ffxiv-book",
+      "label": "Guidebook & Spell Lists",
+      "path": "packs_v3/ffxiv-book",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "display": "table-of-contents"
+        }
+      }
+    },
+    {
+      "name": "ffxiv-species",
+      "label": "Races & Clans",
+      "path": "packs_v3/ffxiv-species",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "types": [
+            "race",
+            "feat"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ffxiv-classes",
+      "label": "Classes",
+      "path": "packs_v3/ffxiv-classes",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "types": [
+            "class"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ffxiv-subclasses",
+      "label": "Subclasses",
+      "path": "packs_v3/ffxiv-subclasses",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "types": [
+            "subclass"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ffxiv-features",
+      "label": "Class, Subclass & Job Features",
+      "path": "packs_v3/ffxiv-features",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "types": [
+            "feat"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ffxiv-spells",
+      "label": "Final Fantasy Spells",
+      "path": "packs_v3/ffxiv-spells",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "sorting": "m",
+          "types": [
+            "spell"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ffxiv-feats",
+      "label": "Role Action Feats",
+      "path": "packs_v3/ffxiv-feats",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "types": [
+            "feat"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ffxiv-items",
+      "label": "Weapons, Firearms & Job Gear",
+      "path": "packs_v3/ffxiv-items",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "types": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "tool",
+            "loot"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ffxiv-actors",
+      "label": "Companions, Turrets & Summons",
+      "path": "packs_v3/ffxiv-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "types": [
+            "npc"
+          ]
+        }
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "FFXIV x D&D 5e: Asgard's Guide to Eitherys",
+      "sorting": "m",
+      "color": "#1e4d8c",
+      "packs": [
+        "ffxiv-book",
+        "ffxiv-species",
+        "ffxiv-classes",
+        "ffxiv-subclasses",
+        "ffxiv-features",
+        "ffxiv-spells",
+        "ffxiv-feats",
+        "ffxiv-items",
+        "ffxiv-actors"
+      ]
+    }
+  ],
+  "flags": {
+    "hotReload": false,
+    "dnd5e": {
+      "sourceBooks": {
+        "FFXIV-DT": "FFXIV.Source.BookTitle"
+      },
+      "spellLists": [
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjerh7TxFoVEepx.JournalEntryPage.ffjpKoZWkb0aJq7Q",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjerh7TxFoVEepx.JournalEntryPage.ffjpqH6Esc6oxF26",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjerh7TxFoVEepx.JournalEntryPage.ffjpFqdILmBgxQmM",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjerh7TxFoVEepx.JournalEntryPage.ffjpf1wpJ3obGotq",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjerh7TxFoVEepx.JournalEntryPage.ffjpZel4zFX5SL0g",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjerh7TxFoVEepx.JournalEntryPage.ffjpk45Ya9DtPnXL",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjerh7TxFoVEepx.JournalEntryPage.ffjpm3fzIRgG459i",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjerh7TxFoVEepx.JournalEntryPage.ffjpoVpq4ZRRUIey",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjerh7TxFoVEepx.JournalEntryPage.ffjpVDxPUgab0sF6",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjerh7TxFoVEepx.JournalEntryPage.ffjpkasQfoZZGVWX",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjerh7TxFoVEepx.JournalEntryPage.ffjpBnGqo6MIpUuN",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjerh7TxFoVEepx.JournalEntryPage.ffjpN3rJ7izFj0b3",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjerh7TxFoVEepx.JournalEntryPage.ffjprD5aZstwRVPZ",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjeJWq6JVUrjQhh.JournalEntryPage.ffjpuogugIrgQVBG",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjeJWq6JVUrjQhh.JournalEntryPage.ffjpzwb7mHKGw99W",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjeJWq6JVUrjQhh.JournalEntryPage.ffjpi9X9eLyduf26",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjeJWq6JVUrjQhh.JournalEntryPage.ffjp5KvnPKnoF4yw",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjeJWq6JVUrjQhh.JournalEntryPage.ffjpIzth5jXHxwXA",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjeJWq6JVUrjQhh.JournalEntryPage.ffjpfQ8dM6B0qBhW",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjeJWq6JVUrjQhh.JournalEntryPage.ffjpqxZdcvjemkLj",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjeJWq6JVUrjQhh.JournalEntryPage.ffjp8lrUNrIpHubN",
+        "Compendium.ffxiv-dnd5e-dawntrail.ffxiv-book.JournalEntry.ffjeJWq6JVUrjQhh.JournalEntryPage.ffjpmuMPkkca03i3"
+      ]
+    }
+  },
+  "url": "https://github.com/Sovahless/ffxiv-foundry-modules",
+  "manifest": "https://raw.githubusercontent.com/Sovahless/ffxiv-foundry-modules/main/manifests/ffxiv-dnd5e-dawntrail/module.json",
+  "download": "https://github.com/Sovahless/ffxiv-foundry-modules/releases/download/ffxiv-dnd5e-dawntrail-v1.1.2/ffxiv-dnd5e-dawntrail.zip"
+}

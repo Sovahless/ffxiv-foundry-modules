@@ -1,0 +1,145 @@
+{
+  "id": "ffxiv-dnd5e-raimdelle-bestiary",
+  "title": "FFXIV x D&D 5e: Raimdelle Codex Asgard (Bestiary)",
+  "description": "Complete Foundry VTT v14 / dnd5e v6.1.1 conversion of the Raimdelle Codex Asgard Final Fantasy XIV Monster Manual: full NPC statblocks with D&D 5e activities, DAE/Midi-QoL effects, legendary actions, and searchable Bestiary Index.",
+  "version": "1.1.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.370"
+  },
+  "authors": [
+    {
+      "name": "Asgard / Discord Community (Original Codex) & Sovahless (Foundry V14 Conversion)"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "6.0.0",
+          "verified": "6.1.1"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "dae",
+        "type": "module",
+        "compatibility": {
+          "minimum": "14.0.0",
+          "verified": "14.0.22"
+        }
+      },
+      {
+        "id": "midi-qol",
+        "type": "module",
+        "compatibility": {
+          "minimum": "14.0.0",
+          "verified": "14.0.20"
+        }
+      },
+      {
+        "id": "ActiveAuras",
+        "type": "module",
+        "compatibility": {
+          "minimum": "0.12.0",
+          "verified": "0.12.5"
+        }
+      },
+      {
+        "id": "ffxiv-dnd5e-dawntrail",
+        "type": "module",
+        "compatibility": {
+          "minimum": "1.1.0",
+          "verified": "1.1.2"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "ffxiv-bestiary",
+      "label": "Raimdelle Bestiary (Monsters)",
+      "path": "packs/ffxiv-bestiary",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "types": [
+            "npc"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ffxiv-npcs",
+      "label": "FFXIV Important NPCs & Allies",
+      "path": "packs/ffxiv-npcs",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "types": [
+            "npc"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ffxiv-bestiary-book",
+      "label": "Raimdelle Codex Index",
+      "path": "packs/ffxiv-bestiary-book",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "display": "table-of-contents"
+        }
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "FFXIV x D&D 5e: Raimdelle Codex Asgard",
+      "sorting": "m",
+      "color": "#7b1e26",
+      "packs": [
+        "ffxiv-bestiary",
+        "ffxiv-npcs",
+        "ffxiv-bestiary-book"
+      ]
+    }
+  ],
+  "flags": {
+    "hotReload": false,
+    "dnd5e": {
+      "sourceBooks": {
+        "FFXIV-RC": "FFXIVRC.Source.BookTitle"
+      }
+    }
+  },
+  "url": "https://github.com/Sovahless/ffxiv-foundry-modules",
+  "manifest": "https://raw.githubusercontent.com/Sovahless/ffxiv-foundry-modules/main/manifests/ffxiv-dnd5e-raimdelle-bestiary/module.json",
+  "download": "https://github.com/Sovahless/ffxiv-foundry-modules/releases/download/ffxiv-dnd5e-raimdelle-bestiary-v1.1.0/ffxiv-dnd5e-raimdelle-bestiary.zip"
+}
