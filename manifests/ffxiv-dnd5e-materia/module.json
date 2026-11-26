@@ -2,7 +2,7 @@
   "id": "ffxiv-dnd5e-materia",
   "title": "FFXIV x D&D 5e: Materia & Pentameld System",
   "description": "FFXIV-inspired Materia & Pentamelding system for Foundry VTT v14 and dnd5e v6.1.1. Adds rarity-based Materia sockets (1 to 5 slots for Legendary Pentameld), interactive sockets directly on Character/NPC inventory rows and Item sheets, 100% free meld/unmeld without breaking Materia, automatic ActiveEffect V2 buffs, and 82 Lv 1–20 Materia covering Melee DPS, Ranged DPS, Caster DPS, Tank, and Healer roles.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "compatibility": {
     "minimum": "14",
     "verified": "14.370"
@@ -92,5 +92,5 @@
   },
   "url": "https://github.com/Sovahless/ffxiv-foundry-modules",
   "manifest": "https://raw.githubusercontent.com/Sovahless/ffxiv-foundry-modules/main/manifests/ffxiv-dnd5e-materia/module.json",
-  "download": "https://github.com/Sovahless/ffxiv-foundry-modules/releases/download/ffxiv-dnd5e-materia-v1.0.2/ffxiv-dnd5e-materia.zip"
+  "download": "https://github.com/Sovahless/ffxiv-foundry-modules/releases/download/ffxiv-dnd5e-materia-v1.0.3/ffxiv-dnd5e-materia.zip"
 }
