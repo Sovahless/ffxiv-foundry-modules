@@ -11,7 +11,7 @@ Dans **Modules complémentaires → Installer un module → URL du manifeste** :
 | Module | Version | URL du manifeste |
 |---|---|---|
 | `ffxiv-dnd5e-dawntrail` | `1.1.2` | `https://raw.githubusercontent.com/Sovahless/ffxiv-foundry-modules/main/manifests/ffxiv-dnd5e-dawntrail/module.json` |
-| `ffxiv-dnd5e-limit-break` | `1.0.0` | `https://raw.githubusercontent.com/Sovahless/ffxiv-foundry-modules/main/manifests/ffxiv-dnd5e-limit-break/module.json` |
+| `ffxiv-dnd5e-limit-break` | `1.1.0` | `https://raw.githubusercontent.com/Sovahless/ffxiv-foundry-modules/main/manifests/ffxiv-dnd5e-limit-break/module.json` |
 | `ffxiv-dnd5e-raimdelle-bestiary` | `1.1.0` | `https://raw.githubusercontent.com/Sovahless/ffxiv-foundry-modules/main/manifests/ffxiv-dnd5e-raimdelle-bestiary/module.json` |
 | `ffxiv-dnd5e-materia` | `1.0.3` | `https://raw.githubusercontent.com/Sovahless/ffxiv-foundry-modules/main/manifests/ffxiv-dnd5e-materia/module.json` |
 
